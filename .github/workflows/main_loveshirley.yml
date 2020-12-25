@@ -20,6 +20,9 @@ jobs:
       with:
         node-version: '12.x'
 
+    - name: Fix directory
+      run: cd ./app 
+
     - name: npm install, build, and test
       run: |
         npm install
